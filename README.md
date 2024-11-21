@@ -4,7 +4,6 @@ The solution uses the following Python libraries:
 - requests
 - pandas
 - pytrends
-- numpy
 - matplotlib
 - seaborn
 - scikit-learn
