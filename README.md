@@ -6,8 +6,8 @@ This solution analyzes the relationship between Google Trends data and cryptocur
 - pytrends
 - matplotlib
 - seaborn
-- sklearn
-|-| step1:data collection/
-|-| step2:EDA and correlation
-|-| ste3:predictive modelling
-|-| step4:visualisation
+- sklearn  
+|-| step1:data collection  
+|-| step2:EDA and correlation  
+|-| ste3:predictive modelling  
+|-| step4:visualisation  
