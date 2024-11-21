@@ -23,5 +23,4 @@ def perform_eda(crypto_data, trends_data):
 
     return combined_data
 
-# Example usage
-# combined_data = perform_eda(crypto_data, google_trends)
+
