@@ -4,14 +4,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
-def prepare_data(data):
+def prepare_data(combined_data):
     # Feature engineering
     data['price_change'] = data['price'].pct_change()
     data['search_change'] = data['Bitcoin'].pct_change()
     data.dropna(inplace=True)
     return data
 
-def train_model(data):
+def train_model(prepared_data):
     # Prepare data
     X = data[['search_change']]
     y = data['price_change']
@@ -27,6 +27,3 @@ def train_model(data):
     print(f"Mean Squared Error: {mse}")
     return model
 
-# Example usage
-# prepared_data = prepare_data(combined_data)
-# model = train_model(prepared_data)
